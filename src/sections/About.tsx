@@ -125,8 +125,8 @@ description="Explore the books Explore the books Explore the books
     className=""
   />
   
- <ToolBoxItems items={toolboxItems} className=""/>
- <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="-translate-x-1/2"/>
+ <ToolBoxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
+ <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:15s]"/>
 </Card>
 </div>
 <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8'>

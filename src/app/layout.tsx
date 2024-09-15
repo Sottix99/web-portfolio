@@ -8,7 +8,7 @@ const calistoga = Calistoga({ subsets : ['latin'], variable: "--font-serif", wei
 
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  description: "",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={twMerge(inter.variable, calistoga.variable, "bg-gray-900 text-white antiliased font-sans")}>{children}</body>
+      <body className={twMerge(inter.variable, calistoga.variable, "bg-gray-900 text-white antialiased font-sans")}>{children}</body>
     </html>
   );
 }
