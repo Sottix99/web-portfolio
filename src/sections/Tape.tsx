@@ -1,6 +1,7 @@
 import StarIcon from '@/assets/icons/star.svg';
 import { Fragment } from 'react';
-const words = ["Performant", "Accesible", "Secure", "Interactive", "Scalable", "User Friendly", "Reliable"];
+const words = ["Machine Learning", "Deep Learning", "Data Analysis", "Generative AI", "Data Management", "Data Visualization", "Data Preparation",
+   "Graph Analytics", "Web Scraping", "Questionnaire Analysis"];
 
 export const TapeSection = () => {
   return <div className="py-16 lg:py-24 overflow-x-clip">

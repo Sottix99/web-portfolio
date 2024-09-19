@@ -1,4 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import darkSaasLandingPage from "@/assets/images/schema_2.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from 'next/image';
@@ -7,15 +7,15 @@ import ArrowUpRigthIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Master Thesis",
+    year: "2024",
+    title: "Point cloud transformers for 3D fragment matching",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://github.com/Sottix99/Point-cloud-transformers-for-3D-fragment-matching",
     image: darkSaasLandingPage,
   },
   {
@@ -46,17 +46,18 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+
+    <section id = "project" className="pb-16 lg:py-24">
       <div className="container">
       <div className="flex justify-center">
       <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400  text-center bg-clip-text text-transparent">
-          Real-world
+      Real-World Impact
       </p>
       </div>
 
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6"> Featured Projects</h2>
+        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6"> Highlighted Projects </h2>
 
-        <p className= "text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">See how I transformed concepts</p>
+        <p className= "text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">Discover the solutions I've crafted to tackle real-world challenges.</p>
         <div className=" mt-10 md:mt-20 flex flex-col gap-20 ">
           {portfolioProjects.map((project, projectIndex) => (
             <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden
@@ -99,7 +100,7 @@ export const ProjectsSection = () => {
               </a>
               </div>
               <div className="relative">
-              <Image src={project.image} alt={project.title} className=" mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg-w-auto lg:max-w-none"/>
+              <Image src={project.image} alt={project.title} className=" mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none "/>
             </div>
             </div>
             </div>

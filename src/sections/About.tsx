@@ -7,8 +7,21 @@ import Image from 'next/image';
 
 import JavascripIcon from '@/assets/icons/square-js.svg';
 import HTMLIcon from '@/assets/icons/html5.svg';
-import mapImage from '@/assets/images/map.png';
+import GITHUBIcon from '@/assets/icons/github.svg';
+import PYTHONIcon from '@/assets/icons/python.svg';
+import RIcon from '@/assets/icons/R.svg';
+import SQLIcon from '@/assets/icons/SQL.svg';
+import TensorFlowIcon from '@/assets/icons/tensorflow.svg';
+import LangChainIcon from '@/assets/icons/langchain.svg';
+import PytorchIcon from '@/assets/icons/pytorch.svg';
+import DatabricksIcon from '@/assets/icons/databricks.svg';
+import OpenAIIcon from '@/assets/icons/openAi.svg';
+
+
+
+import mapImage from '@/assets/images/VT_2.png';
 import smileMemoji from '@/assets/images/memoji-smile.png';
+
 import { CardHeader } from '@/components/CardHeader';
 import { ToolBoxItems } from '@/components/ToolBoxItems_2';
 
@@ -17,28 +30,48 @@ import { useRef } from 'react';
 
 const toolboxItems = [
   {
-    title: 'Java',
-    iconType: JavascripIcon,
+    title: 'Python',
+    iconType: PYTHONIcon,
   },
   {
-    title: 'Java',
-    iconType: HTMLIcon,
+    title: 'SQL',
+    iconType: SQLIcon,
   },
   {
-    title: 'Java',
-    iconType: HTMLIcon,
+    title: 'R',
+    iconType: RIcon,
   },
   {
-    title: 'Java',
-    iconType: HTMLIcon,
+    title: 'PowerBI',
+    iconType: RIcon,
   },
   {
-    title: 'Java',
-    iconType: HTMLIcon,
+    title: 'LangChain',
+    iconType: LangChainIcon,
   },
   {
-    title: 'Java',
-    iconType: HTMLIcon,
+    title: 'Pytorch',
+    iconType: PytorchIcon,
+  },
+
+  {
+    title: 'TensorFlow',
+    iconType: TensorFlowIcon,
+  },
+
+  {
+    title: 'GitHub',
+    iconType: GITHUBIcon,
+  },
+
+  {
+    title: 'Databricks',
+    iconType: DatabricksIcon,
+  },
+
+  {
+    title: 'OpenAI ',
+    iconType: OpenAIIcon,
   },
 ];
 
@@ -125,7 +158,7 @@ description="Explore the books Explore the books Explore the books
     <Card className="h-[320px]  md:col-span-3 lg:col-span-2">
     <CardHeader
     title="My Toolbox"
-    description="Explore the technologies and tools used to craft exceptional digital experiences"
+    description="Uncover the Cutting-Edge Tools and Technologies Behind Data-Driven and AI-Powered Solutions"
     className=""
   />
   
