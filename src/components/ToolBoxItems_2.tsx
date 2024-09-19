@@ -1,5 +1,5 @@
 import { twMerge } from 'tailwind-merge';
-import { TechIcon } from './Techicon';
+import { TechIcon } from './TechIcon';
 import { Fragment } from 'react';
 
 export const ToolBoxItems = ({
@@ -14,7 +14,7 @@ export const ToolBoxItems = ({
   itemsWrapperClassName?: string;
 }) => {
   return (
-    <div className={twMerge("flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]", // Corretto "to_right"
+    <div className={twMerge("flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]", 
         className
      )}>
         <div className={twMerge("flex flex-none py-0.5 gap-6 pr-6", itemsWrapperClassName)}>

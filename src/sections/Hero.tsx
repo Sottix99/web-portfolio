@@ -10,7 +10,6 @@ import miaFoto from '@/assets/images/DSC_1520.jpg';
 
 export const HeroSection = () => {
   return (
-    <div className="wrapper_ok">
     
     <div className="py-32 md:py-48 lg:py-60 relative -z-9 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%, black_70%,transparent)]">
@@ -58,9 +57,6 @@ export const HeroSection = () => {
           <div className="size-2 rounded-full bg-emerald-300/20" />
         </Hero0rbit>
       </div>
-
-    </div>
-
       <div className="container cicciobello">
         <div className="flex flex-col items-center rounded all">
           <Image
@@ -109,7 +105,9 @@ export const HeroSection = () => {
 
         </div>
       </div>
+
     </div>
+
   );
 };
 
