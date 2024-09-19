@@ -11,13 +11,13 @@ import miaFoto from '@/assets/images/DSC_1520.jpg';
 export const HeroSection = () => {
   return (
     
-    <div className="py-32 md:py-48 lg:py-60 relative -z-9 overflow-x-clip">
+    <div className="py-32 md:py-48 lg:py-60 relative z-9 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%, black_70%,transparent)]">
         <div className="absolute inset-0 -z-8 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
-        <div className="size-[620px] hero-ring -z-4"></div>
-        <div className="size-[820px] hero-ring -z-5"></div>
-        <div className="size-[1020px] hero-ring -z-6"></div>
-        <div className="size-[1220px] hero-ring -z-7"></div>
+        <div className="size-[620px] hero-ring"></div>
+        <div className="size-[820px] hero-ring"></div>
+        <div className="size-[1020px] hero-ring"></div>
+        <div className="size-[1220px] hero-ring"></div>
 
         <Hero0rbit size={800} rotation={-72} shouldOrbit orbitDuration="48s" shouldSpin spinDuration="6s">
           <StarIcon className="size-28 text-emerald-300" />
@@ -83,11 +83,11 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10">
             <span className="font-semibold">Discover My Projects</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-violet-100 text-gray-900 hover:bg-white/70 hover:text-gray-900 transition-colors duration-300 h-12 px-6 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white bg-violet-100 text-gray-900 hover:bg-violet-600  h-12 px-6 rounded-xl  z-10">
             <a className="flex items-center gap-2">
               <span>✌️</span>
               <span className="font-semibold">Let's Connect</span>
@@ -97,7 +97,7 @@ export const HeroSection = () => {
 
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 px-6 h-12 rounded-xl border border-white/15 bg-violet-500 hover:bg-violet-600  ">
+          <button className="inline-flex items-center gap-2 px-6 h-12 rounded-xl border border-white/15 bg-violet-500 hover:bg-violet-600  z-10">
             <span className="font-semibold">Curriculum Vitae</span>
             <ArrowDown className="size-4" />
           </button>
