@@ -2,7 +2,7 @@
 import { SectionHeader } from '@/components/SectionHeader';
 import { Card } from '@/components/Card';
 import StarIcon from '@/assets/icons/star.svg';
-import bookImage from '@/assets/images/book-cover.png';
+import print_3d from '@/assets/images/Stampante-3D-Bambu-Lab-P1S-Combo.png';
 import Image from 'next/image';
 
 import JavascripIcon from '@/assets/icons/square-js.svg';
@@ -89,7 +89,7 @@ const hobbies = [
   {
     title: 'Photography',
     emoji: '📷',
-    left:'50%',
+    left:'40%',
     top:'5%',
   },
 
@@ -102,31 +102,38 @@ const hobbies = [
   },
 
   {
-    title: 'Plants',
+    title: 'Botany',
     emoji: '🌱',
     left:'35%',
     top:'40%',
   },
 
   {
-    title: 'Plants',
-    emoji: '🌱',
+    title: 'Videogames',
+    emoji: '🎮',
     left:'70%',
     top:'45%',
   },
 
   {
-    title: 'Plants',
-    emoji: '🌱',
+    title: '3D printing',
+    emoji: '🖨️',
     left:'5%',
     top:'65%',
   },
 
   {
-    title: 'Plants',
-    emoji: '🌱',
+    title: 'Football',
+    emoji: '⚽',
     left:'45%',
     top:'70%',
+  },
+
+  {
+    title: 'Reading',
+    emoji: '📖',
+    left:'70%',
+    top:'5%',
   }
 
 ]
@@ -134,7 +141,9 @@ const hobbies = [
 
 export const AboutSection = () => {
   const constraintRef= useRef(null);
-  return (<div className="py-20  lg:py-28">
+  return (
+  <section id = "about" className="pb-20 lg:py-28">
+
     <div className="container">
     <SectionHeader 
     eyebrow="About Me"
@@ -146,11 +155,11 @@ export const AboutSection = () => {
     <div className=' grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
       
     <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-<CardHeader title="My Reads" 
-description="Explore the books Explore the books Explore the books
- Explore the books" />
+<CardHeader title="3D Printing" 
+description="Discover the endless possibilities of 3D printing! 
+ I am open to commissions." />
 <div className="w-40 mx-auto mt-2 md:mt-0">
-<Image src={bookImage} alt="Book cover" />
+<Image src={print_3d} alt="Book cover" />
 </div>
 
 
@@ -196,6 +205,6 @@ description="Explore my interests and hobbies beyond the digital realm" classNam
 </div>
   </div>
   </div>
-  </div>
+  </section>
   );
 };

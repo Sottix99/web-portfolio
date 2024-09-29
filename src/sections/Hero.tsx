@@ -1,6 +1,7 @@
 import memojiImage from '@/assets/images/memoji-computer.png';
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
+import CV from '@/assets/icons/cv.svg';
 import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg';
 import { Hero0rbit } from '@/components/Hero0rbit';
@@ -10,8 +11,7 @@ import miaFoto from '@/assets/images/DSC_1520.jpg';
 
 export const HeroSection = () => {
   return (
-    
-    <div className="py-32 md:py-48 lg:py-60 relative z-9 overflow-x-clip">
+    <section id = "home" className="py-32 md:py-48 lg:py-60 relative z-9 overflow-x-clip">
       <div className="absolute inset-0" style={{ maskImage: "linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)" }}>
         <div className="absolute inset-0 -z-8 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
         <div className="size-[620px] hero-ring"></div>
@@ -83,30 +83,41 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10">
-            <span className="font-semibold">Discover My Projects</span>
-            <ArrowDown className="size-4" />
+                <a href="/path/to/tuo-cv.pdf" download>
+          <button className="inline-flex items-center gap-2 px-6 h-12 rounded-xl border border-transparent bg-violet-600 text-gray-900 hover:bg-violet-700 hover:text-white hover:border-violet-700 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 z-10">
+            <span className="font-semibold">Curriculum Vitae</span>
+            <CV className="size-6" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-violet-100 text-gray-900 hover:bg-violet-600  h-12 px-6 rounded-xl  z-10">
-            <a className="flex items-center gap-2">
-              <span>✌️</span>
-              <span className="font-semibold">Let's Connect</span>
-            </a>
-          </button>
+        </a>
+
+          
+<a href="https://www.linkedin.com/in/alessandro-sottile/" target="_blank" rel="noopener noreferrer">
+  <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 hover:bg-yellow-500 hover:text-white hover:border-yellow-500 h-12 px-6 rounded-xl z-10 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+    <span>✌️</span>
+    <span className="font-semibold">Let's Connect</span>
+  </button>
+</a>
+
+
 
 
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 px-6 h-12 rounded-xl border border-white/15 bg-violet-500 hover:bg-violet-600  z-10">
-            <span className="font-semibold">Curriculum Vitae</span>
-            <ArrowDown className="size-4" />
-          </button>
+        <a href="#project">
+  <button className="inline-flex items-center gap-2 border border-transparent bg-emerald-300 text-gray-900 px-6 h-12 rounded-xl z-10 shadow-md hover:bg-emerald-400 hover:text-white hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+    <span className="font-semibold">Discover My Projects</span>
+    <ArrowDown className="size-4" />
+  </button>
+</a>
+
+
+
 
 
         </div>
       </div>
 
-    </div>
+      </section>
 
   );
 };

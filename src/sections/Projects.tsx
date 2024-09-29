@@ -1,6 +1,8 @@
-import darkSaasLandingPage from "@/assets/images/schema_2.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import schema from "@/assets/images/schemaboh.png";
+import couple_5426 from "@/assets/images/Couple_5426.gif";
+import Bitcoin from "@/assets/images/Bitcoin.svg.png";
+import tooth from "@/assets/images/Tooth.png";
+import graph from "@/assets/images/sistemare.png";
 import Image from 'next/image';
 import CheckCircleicon from '@/assets/icons/check-circle.svg';
 import ArrowUpRigthIcon from '@/assets/icons/arrow-up-right.svg';
@@ -11,36 +13,43 @@ const portfolioProjects = [
     year: "2024",
     title: "Point cloud transformers for 3D fragment matching",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "This project, part of a master's thesis in Data Science at Sapienza University, focuses on using deep learning models to assist in the reconstruction of fragmented artifacts. By leveraging Point Cloud Transformers (PCTs), the goal is to develop a neural network capable of predicting whether two 3D object fragments are adjacent. This technology offers practical support to archaeologists working to piece together historical artifacts, enhancing the reconstruction process with artificial intelligence." },
+
     ],
     link: "https://github.com/Sottix99/Point-cloud-transformers-for-3D-fragment-matching",
-    image: darkSaasLandingPage,
+    image: couple_5426,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
+    company: "Univerisity project",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Bitcoin Price Forecasting and Sentiment Analysis using Tweets",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "The project aims to forecast Bitcoin prices by analyzing Twitter sentiment data. By using machine learning techniques and sentiment analysis, it identifies indicators that correlate with Bitcoin price movements. Various natural language processing models and forecasting methods are employed to improve prediction accuracy." },
+
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/Sottix99/Bitcoin-Price-Forecasting-and-Sentiment-Analysis-using-Tweets",
+    image: Bitcoin,
+  },
+  {
+    company: "Univerisity project / Sorridi srl",
+    year: "2023",
+    title: "Deep Learning for Orthodontic Photos",
+    results: [
+      { title: "This project explores the application of machine learning and deep learning techniques to classify orthodontic images for treatment planning. Partnering with the aligner company Sorridi, the goal is to automate the pre-evaluation process, which is currently done manually by technicians. By analyzing dental photos, the system aims to classify treatment categories such as Soft, Semi-Medium, Medium, Semi-Hard, and Hard based on various dental conditions." },
+
+    ],
+    link: "https://github.com/Sottix99/Deep-Learning-for-Orthodontic-Photos",
+    image: tooth,
+  },
+  {
+    company: "Univerisity project",
+    year: "2023",
+    title: "Football Transfers Network Analisys",
+    results: [
+      { title: "This project delves into the intricate dynamics of the European football transfer market, analyzing player movements between top clubs across the seven major European leagues from 1992 to 2022. By modeling the transfer market as a complex network, where clubs are nodes and player transfers are weighted links, the project uncovers evolving trends in team interactions, transfer fees, and market structure." },
+    ],
+    link: "https://github.com/Sottix99/Football-Transfers-Network-Analisys",
+    image: graph,
   },
 ];
 
@@ -94,7 +103,7 @@ export const ProjectsSection = () => {
               <a href={project.link}>
               <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6rounded-xl font-semibold 
               inline-flex items-center justify-center gap-2 mt-8">
-                <span>Visit Live Site</span>
+                <span>More details</span>
                 <ArrowUpRigthIcon className = "size-4"/>
                 </button>
               </a>
