@@ -28,113 +28,11 @@ import { ToolBoxItems } from '@/components/ToolBoxItems_2';
 import {motion} from 'framer-motion';
 import { useRef } from 'react';
 
-const toolboxItems = [
-  {
-    title: 'Python',
-    iconType: PYTHONIcon,
-  },
-  {
-    title: 'SQL',
-    iconType: SQLIcon,
-  },
-  {
-    title: 'R',
-    iconType: RIcon,
-  },
-  {
-    title: 'PowerBI',
-    iconType: RIcon,
-  },
-  {
-    title: 'LangChain',
-    iconType: LangChainIcon,
-  },
-  {
-    title: 'Pytorch',
-    iconType: PytorchIcon,
-  },
 
-  {
-    title: 'TensorFlow',
-    iconType: TensorFlowIcon,
-  },
-
-  {
-    title: 'GitHub',
-    iconType: GITHUBIcon,
-  },
-
-  {
-    title: 'Databricks',
-    iconType: DatabricksIcon,
-  },
-
-  {
-    title: 'OpenAI ',
-    iconType: OpenAIIcon,
-  },
-];
 
 
 const hobbies = [
 
-  {
-    title: 'Gym',
-    emoji: '🏋🏻',
-    left:'5%',
-    top:'5%',
-
-  },
-
-  {
-    title: 'Photography',
-    emoji: '📷',
-    left:'40%',
-    top:'5%',
-  },
-
-
-  {
-    title: 'Astronomy',
-    emoji: '🔭',
-    left:'10%',
-    top:'35%',
-  },
-
-  {
-    title: 'Botany',
-    emoji: '🌱',
-    left:'35%',
-    top:'40%',
-  },
-
-  {
-    title: 'Videogames',
-    emoji: '🎮',
-    left:'70%',
-    top:'45%',
-  },
-
-  {
-    title: '3D printing',
-    emoji: '🖨️',
-    left:'5%',
-    top:'65%',
-  },
-
-  {
-    title: 'Football',
-    emoji: '⚽',
-    left:'45%',
-    top:'70%',
-  },
-
-  {
-    title: 'Reading',
-    emoji: '📖',
-    left:'70%',
-    top:'5%',
-  }
 
 ]
 
@@ -142,20 +40,41 @@ const hobbies = [
 export const ExpSection = () => {
   const constraintRef= useRef(null);
   return (
-  <section id = "about" className="pb-20 lg:py-28">
+  <section id = "Experiences" className="pb-20 lg:py-28">
 
     <div className="container">
     <SectionHeader 
-    eyebrow="My experiences"
-    title =""
-    description ="" />
+      eyebrow="My experiences"
+      title="A Journey Through My Professional Growth"
+      description="Explore the milestones that have shaped my path, from academic achievements to impactful work experiences."
+    />
 
 
   <div className="mt-20 flex flex-col gap-8">
-    <div className=' grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-2'>
+    <div className=' grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-1'>
       
-    <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-<CardHeader title="3D Printing" 
+    <Card className="h-[320px] md:col-span-1 lg:col-span-1">
+<CardHeader title="Master Degree in Data Science" 
+description="During my university course, delivered entirely in English, I collaborated on original projects using state-ofthe-art technologies in the fields of deep learning, machine learning, data analysis, and data management.
+These projects dealt with a wide range of data, including texts, numbers, images, and 3D scans. The
+projects are available for consultation on my Github repository.
+" />
+<div className="w-40 mx-auto mt-2 md:mt-0">
+<Image src={print_3d} alt="Book cover" />
+</div>
+
+
+    </Card>
+    <Card className="h-[320px]  md:col-span-1 lg:col-span-1">
+    <CardHeader
+    title="Trainingcamp Leonardo SpA"
+    description="Uncover the Cutting-Edge Tools and Technologies Behind Data-Driven and AI-Powered Solutions"
+    className=""
+  />
+</Card>
+
+<Card className="h-[320px] md:col-span-1 lg:col-span-1">
+<CardHeader title="Bachelor Degree in statistics" 
 description="Discover the endless possibilities of 3D printing! 
  I am open to commissions." />
 <div className="w-40 mx-auto mt-2 md:mt-0">
@@ -164,16 +83,16 @@ description="Discover the endless possibilities of 3D printing!
 
 
     </Card>
-    <Card className="h-[320px]  md:col-span-2 lg:col-span-1">
+    <Card className="h-[320px]  md:col-span-1 lg:col-span-1">
     <CardHeader
     title="My Toolbox"
     description="Uncover the Cutting-Edge Tools and Technologies Behind Data-Driven and AI-Powered Solutions"
     className=""
   />
-  
- <ToolBoxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
- <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:15s]"/>
 </Card>
+
+
+
 </div>
 <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-2 gap-8'>
 
@@ -183,13 +102,6 @@ description="Discover the endless possibilities of 3D printing!
 description="Explore my interests and hobbies beyond the digital realm" className='px-6 py-6' />
   <div className='relative flex-1' ref= {constraintRef }>
 
-    {hobbies.map(hobby => (
-      <motion.div key={hobby.title} className="cursor-grab inline-flex items-center gap-2 px-6 bg-gradient-to-r 
-      from-emerald-300 to-sky-400 rounded-full py-1.5 absolute" style={{left: hobby.left, top: hobby.top,}} drag dragConstraints={constraintRef}>
-        <span className="font-medium text-gray-950">{hobby.title}</span>
-        <span>{hobby.emoji}</span>
-      </motion.div>
-    ))}
 
   </div>
 </Card>
