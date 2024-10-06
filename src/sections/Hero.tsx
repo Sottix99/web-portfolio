@@ -78,8 +78,7 @@ export const HeroSection = () => {
             Shaping the Future with AI Solutions
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I am a Data Scientist/AI engineer. I possess
-            advanced skills in Deep Learning, Generative AI, Data Analysis and Management.
+          I'm Alessandro Sottile, a Data Scientist and AI Engineer.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

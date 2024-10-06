@@ -1,8 +1,10 @@
 import schema from "@/assets/images/schemaboh.png";
+import caligola from "@/assets/images/Remove background project.png";
 import couple_5426 from "@/assets/images/Couple_5426.gif";
 import Bitcoin from "@/assets/images/Bitcoin.svg.png";
 import tooth from "@/assets/images/Tooth.png";
 import graph from "@/assets/images/sistemare.png";
+import leaf from "@/assets/images/leaf.png";
 import Image from 'next/image';
 import CheckCircleicon from '@/assets/icons/check-circle.svg';
 import ArrowUpRigthIcon from '@/assets/icons/arrow-up-right.svg';
@@ -17,7 +19,7 @@ const portfolioProjects = [
 
     ],
     link: "https://github.com/Sottix99/Point-cloud-transformers-for-3D-fragment-matching",
-    image: couple_5426,
+    image: caligola,
   },
   {
     company: "Univerisity project",
@@ -44,6 +46,16 @@ const portfolioProjects = [
   {
     company: "Univerisity project",
     year: "2023",
+    title: "Leaf Disease Classification",
+    results: [
+      { title: "This project focuses on the automatic classification of corn leaf diseases using deep neural networks. The dataset includes over 4000 images categorized into four classes: Common Rust, Gray Leaf Spot, Blight, and Healthy. Through the use of Convolutional Neural Networks (CNNs) and advanced deep learning techniques, the model achieves a classification accuracy of 91.5%. This solution is highly effective for early disease detection in plants, with strong potential for agricultural applications." },
+    ],
+    link: "https://github.com/Sottix99/Leaf-Disease-Classification",
+    image: leaf,
+  },
+  {
+    company: "Univerisity project",
+    year: "2023",
     title: "Football Transfers Network Analisys",
     results: [
       { title: "This project delves into the intricate dynamics of the European football transfer market, analyzing player movements between top clubs across the seven major European leagues from 1992 to 2022. By modeling the transfer market as a complex network, where clubs are nodes and player transfers are weighted links, the project uncovers evolving trends in team interactions, transfer fees, and market structure." },
@@ -51,6 +63,7 @@ const portfolioProjects = [
     link: "https://github.com/Sottix99/Football-Transfers-Network-Analisys",
     image: graph,
   },
+
 ];
 
 export const ProjectsSection = () => {
