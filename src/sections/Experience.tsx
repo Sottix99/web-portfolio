@@ -20,7 +20,7 @@ import OpenAIIcon from '@/assets/icons/openAi.svg';
 
 
 import mapImage from '@/assets/images/VT_2.png';
-import smileMemoji from '@/assets/images/memoji_mia.png';
+import smileMemoji from '@/assets/images/memoji-smile.png';
 
 import { CardHeader } from '@/components/CardHeader';
 import { ToolBoxItems } from '@/components/ToolBoxItems_2';
@@ -139,20 +139,20 @@ const hobbies = [
 ]
 
 
-export const AboutSection = () => {
+export const ExpSection = () => {
   const constraintRef= useRef(null);
   return (
   <section id = "about" className="pb-20 lg:py-28">
 
     <div className="container">
     <SectionHeader 
-    eyebrow="About Me"
-    title ="A Glimpse Into My World"
-    description ="Learn more about who I am, what I do and what inspire me" />
+    eyebrow="My experiences"
+    title =""
+    description ="" />
 
 
   <div className="mt-20 flex flex-col gap-8">
-    <div className=' grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
+    <div className=' grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-2'>
       
     <Card className="h-[320px] md:col-span-2 lg:col-span-1">
 <CardHeader title="3D Printing" 
@@ -164,7 +164,7 @@ description="Discover the endless possibilities of 3D printing!
 
 
     </Card>
-    <Card className="h-[320px]  md:col-span-3 lg:col-span-2">
+    <Card className="h-[320px]  md:col-span-2 lg:col-span-1">
     <CardHeader
     title="My Toolbox"
     description="Uncover the Cutting-Edge Tools and Technologies Behind Data-Driven and AI-Powered Solutions"
@@ -175,10 +175,10 @@ description="Discover the endless possibilities of 3D printing!
  <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:15s]"/>
 </Card>
 </div>
-<div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8'>
+<div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-2 gap-8'>
 
 
-<Card className='h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2'>
+<Card className='h-[320px] p-0 flex flex-col md:col-span-2 lg:col-span-1'>
 <CardHeader title="Beyond the Code" 
 description="Explore my interests and hobbies beyond the digital realm" className='px-6 py-6' />
   <div className='relative flex-1' ref= {constraintRef }>

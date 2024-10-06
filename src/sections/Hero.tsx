@@ -7,6 +7,9 @@ import StarIcon from '@/assets/icons/star.svg';
 import { Hero0rbit } from '@/components/Hero0rbit';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
 import miaFoto from '@/assets/images/DSC_1520.jpg';
+import miaFoto_2 from '@/assets/images/foto sito.png';
+import miaFoto_3 from '@/assets/images/io_saluto.png';
+
 
 
 export const HeroSection = () => {
@@ -60,7 +63,7 @@ export const HeroSection = () => {
       <div className="container cicciobello">
         <div className="flex flex-col items-center rounded all">
           <Image
-            src={miaFoto}
+            src={miaFoto_3}
             className="w-28 h-28 object-cover" // w-24 e h-24 imposta larghezza e altezza
             alt="Alessandro Sottile"
           />
@@ -82,10 +85,10 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-                <a href="/path/to/tuo-cv.pdf" download>
-          <button className="inline-flex items-center gap-2 px-6 h-12 rounded-xl border border-transparent bg-violet-600 text-gray-900 hover:bg-violet-700 hover:text-white hover:border-violet-700 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 z-10">
+                <a href= '/files/cv_sito.pdf' download>
+          <button className="group inline-flex items-center gap-2 px-6 h-12 rounded-xl border border-transparent bg-violet-600 text-gray-900 hover:bg-violet-700 hover:text-white hover:border-violet-700 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 z-10">
             <span className="font-semibold">Curriculum Vitae</span>
-            <CV className="size-6" />
+            <CV className="size-6 group-hover:invert transition-all duration-300 ease-in-out" />
           </button>
         </a>
 

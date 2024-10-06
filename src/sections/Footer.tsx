@@ -3,12 +3,12 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 const footerLinks =[
  {
   title: 'Mail',
-  href: '#',
+  href: 'mailto:sottile124@gmail.com',
  },
 
  {
   title: 'GitHub',
-  href: '#',
+  href: 'https://github.com/Sottix99',
  },
 
  {
