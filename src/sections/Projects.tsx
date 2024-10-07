@@ -3,8 +3,11 @@ import caligola from "@/assets/images/Remove background project.png";
 import couple_5426 from "@/assets/images/Couple_5426.gif";
 import Bitcoin from "@/assets/images/Bitcoin.svg.png";
 import tooth from "@/assets/images/Tooth.png";
+import bocca from "@/assets/images/Bocca.png";
+import transfers from "@/assets/images/Transfermarkt_logo.png";
 import graph from "@/assets/images/sistemare.png";
 import leaf from "@/assets/images/leaf.png";
+import leaff from "@/assets/images/leaff.jpg";
 import Image from 'next/image';
 import CheckCircleicon from '@/assets/icons/check-circle.svg';
 import ArrowUpRigthIcon from '@/assets/icons/arrow-up-right.svg';
@@ -41,7 +44,7 @@ const portfolioProjects = [
 
     ],
     link: "https://github.com/Sottix99/Deep-Learning-for-Orthodontic-Photos",
-    image: tooth,
+    image: bocca,
   },
   {
     company: "Univerisity project",
@@ -51,7 +54,7 @@ const portfolioProjects = [
       { title: "This project focuses on the automatic classification of corn leaf diseases using deep neural networks. The dataset includes over 4000 images categorized into four classes: Common Rust, Gray Leaf Spot, Blight, and Healthy. Through the use of Convolutional Neural Networks (CNNs) and advanced deep learning techniques, the model achieves a classification accuracy of 91.5%. This solution is highly effective for early disease detection in plants, with strong potential for agricultural applications." },
     ],
     link: "https://github.com/Sottix99/Leaf-Disease-Classification",
-    image: leaf,
+    image: leaff,
   },
   {
     company: "Univerisity project",
@@ -61,7 +64,7 @@ const portfolioProjects = [
       { title: "This project delves into the intricate dynamics of the European football transfer market, analyzing player movements between top clubs across the seven major European leagues from 1992 to 2022. By modeling the transfer market as a complex network, where clubs are nodes and player transfers are weighted links, the project uncovers evolving trends in team interactions, transfer fees, and market structure." },
     ],
     link: "https://github.com/Sottix99/Football-Transfers-Network-Analisys",
-    image: graph,
+    image: transfers,
   },
   
 
@@ -115,7 +118,7 @@ export const ProjectsSection = () => {
                 ))}
               </ul>
               <a href={project.link}>
-              <button className="text-gray-900 bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-semibold items-center px-6 h-12 rounded-xl w-max border border-gray-900 z-20 gap-2 mt-8"> 
+              <button className="text-gray-900 bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-semibold items-center px-6 h-12 rounded-xl w-max border border-gray-900 z-20 gap-2 mt-8 hover:text-white  hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"> 
                 <span>More details</span>
                 <ArrowUpRigthIcon className = "size-4"/>
                 </button>

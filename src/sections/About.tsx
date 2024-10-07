@@ -16,6 +16,8 @@ import LangChainIcon from '@/assets/icons/langchain.svg';
 import PytorchIcon from '@/assets/icons/pytorch.svg';
 import DatabricksIcon from '@/assets/icons/databricks.svg';
 import OpenAIIcon from '@/assets/icons/openAi.svg';
+import HuggingFaceIcon from '@/assets/icons/hf-logo.svg';
+import PowerBiIcon from '@/assets/icons/New_Power_BI_Logo.svg';
 
 
 
@@ -43,7 +45,7 @@ const toolboxItems = [
   },
   {
     title: 'PowerBI',
-    iconType: RIcon,
+    iconType: PowerBiIcon,
   },
   {
     title: 'LangChain',
@@ -72,6 +74,10 @@ const toolboxItems = [
   {
     title: 'OpenAI ',
     iconType: OpenAIIcon,
+  },
+  {
+    title: 'HuggingFace ',
+    iconType: HuggingFaceIcon,
   },
 ];
 
