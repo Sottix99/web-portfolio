@@ -83,7 +83,7 @@ export const ProjectsSection = () => {
 
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6"> Highlighted Projects </h2>
 
-        <p className= "text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">Discover the solutions I've crafted to tackle real-world challenges.</p>
+        <p className= "text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">Discover the solutions I&apos;ve crafted to tackle real-world challenges.</p>
         <div className=" mt-10 md:mt-20 flex flex-col gap-20 ">
           {portfolioProjects.map((project, projectIndex) => (
             <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden

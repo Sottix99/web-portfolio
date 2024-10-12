@@ -15,10 +15,10 @@ export const ContactSection = () => {
           <div className='flex flex-col md:flex-row justify-between items-center z-20'>
             <div className='flex flex-col gap-4'>
               <h2 className='font-serif font-bold text-2xl md:text-3xl'>
-                Let's create something amazing together
+                Let&apos;s create something amazing together
               </h2>
               <p className='text-sm md:text-base mt-2'>
-                Ready to bring your next project to life? Let's connect and I can help you achieve your goals.
+                Ready to bring your next project to life? Let&apos;s connect and I can help you achieve your goals.
               </p>
             </div>
 

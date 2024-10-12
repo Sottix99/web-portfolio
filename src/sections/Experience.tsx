@@ -58,6 +58,7 @@ export const ExpSection = () => {
     <div className="mt-4 transition-all duration-300 transform -translate-y-5 group-hover:translate-y-20 group-hover:scale-75">
     <Image
   src={BipLogo}
+  alt="Bip Company Logo"
   className="w-20 h-auto filter brightness-0 invert transition-all duration-300 group-hover:w-24 group-hover:filter-none group-hover:text-emerald-300" 
   // Il logo diventa più piccolo e si sposta verso il basso su hover
 />
@@ -67,7 +68,7 @@ export const ExpSection = () => {
   {/* Testo nascosto che appare al posto del logo su hover */}
   <div className="mt-4 absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
   <p className="text-white text-center" style={{ marginLeft: "30px", marginRight: "30px" }}>
-  I'm working on developing generative AI solutions using LangChain, analyzing and managing
+  I&apos;m working on developing generative AI solutions using LangChain, analyzing and managing
   data on Databricks using Python and SQL, and creating dashboards with Power BI
     </p>
   </div>
@@ -85,6 +86,7 @@ export const ExpSection = () => {
     {/* Logo grande e centrato sotto il titolo */}
     <div className="mt-4 transition-all duration-300 transform -translate-y-5 group-hover:translate-y-20 group-hover:scale-75">
     <Image
+    alt="AquaBio Company Logo"
   src={AquaBioLogo}
   className="w-40 h-auto filter brightness-0 invert transition-all duration-300 group-hover:w-24 group-hover:filter-none group-hover:text-emerald-300" 
   // Il logo diventa più piccolo e si sposta verso il basso su hover
@@ -113,6 +115,7 @@ export const ExpSection = () => {
     <div className="mt-4 transition-all duration-300 transform -translate-y-5 group-hover:translate-y-20 group-hover:scale-75">
     <Image
   src={SorridiLogo}
+  alt="Sorridi Company Logo"
   className="w-40 h-auto filter brightness-0 invert transition-all duration-300 group-hover:w-24 group-hover:filter-none group-hover:text-emerald-300" 
   // Il logo diventa più piccolo e si sposta verso il basso su hover
 />
@@ -140,6 +143,7 @@ export const ExpSection = () => {
     <div className="mt-4 transition-all duration-300 transform -translate-y-5 group-hover:translate-y-8 group-hover:scale-75">
     <Image
   src={SapienzaLogo}
+  alt="Sapienza Logo"
   className="w-20 h-auto filter brightness-0 invert transition-all duration-300 group-hover:w-24 group-hover:filter-none group-hover:text-emerald-300" 
   // Il logo diventa più piccolo e si sposta verso il basso su hover
 />
@@ -168,6 +172,7 @@ I worked on innovative projects utilizing advanced technologies in deep learning
     <div className="mt-4 transition-all duration-300 transform -translate-y-5 group-hover:translate-y-8 group-hover:scale-75">
     <Image
   src={LeonardoLogo}
+  alt="Leonardo Company Logo"
   className="w-20 h-auto filter brightness-0 invert transition-all duration-300 group-hover:w-24 group-hover:filter-none group-hover:text-emerald-300" 
   // Il logo diventa più piccolo e si sposta verso il basso su hover
 />
@@ -197,6 +202,7 @@ classification.
     <div className="mt-4 transition-all duration-300 transform -translate-y-5 group-hover:translate-y-8 group-hover:scale-75">
     <Image
   src={SapienzaLogo}
+  alt="Sapienza Logo"
   className="w-20 h-auto filter brightness-0 invert transition-all duration-300 group-hover:w-24 group-hover:filter-none group-hover:text-emerald-300" 
   // Il logo diventa più piccolo e si sposta verso il basso su hover
 />

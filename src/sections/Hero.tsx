@@ -81,7 +81,7 @@ export const HeroSection = () => {
             Shaping the Future with AI Solutions
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-          I'm Alessandro Sottile, a Data Scientist and AI Engineer.
+          I&apos;m Alessandro Sottile, a Data Scientist and AI Engineer.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -96,7 +96,7 @@ export const HeroSection = () => {
 <a href="https://www.linkedin.com/in/alessandro-sottile/" target="_blank" rel="noopener noreferrer">
   <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 hover:bg-yellow-500 hover:text-white hover:border-yellow-500 h-12 px-6 rounded-xl z-10 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
     <span>✌️</span>
-    <span className="font-semibold">Let's Connect</span>
+    <span className="font-semibold">Let&apos;s Connect</span>
   </button>
 </a>
 

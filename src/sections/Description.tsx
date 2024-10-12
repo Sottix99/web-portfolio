@@ -11,7 +11,7 @@ export const descriptionSection = () => {
       </p>
       </div>
 
-        <p className= "text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">Discover the solutions I've crafted to tackle real-world challenges.</p>
+        <p className= "text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">Discover the solutions I&apos;ve crafted to tackle real-world challenges.</p>
         
       </div>
     </section>
