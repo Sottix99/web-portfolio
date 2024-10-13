@@ -111,7 +111,7 @@ export const ProjectsSection = () => {
 
               <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                 {project.results.map((result) => (
-                  <li className="flex gap-2 md:text-base text-sm text-white/50"> 
+                  <li key={result.title} className="flex gap-2 md:text-base text-sm text-white/50"> 
                     
                   <span>{result.title}</span>
                   </li>
